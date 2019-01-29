@@ -1,4 +1,4 @@
-
+![nmtp example](https://github.com/Valentin-Aslanyan/nmtp_pyplot_tools/blob/master/example.png)
 
 Various simple tools for pyplot
 
@@ -27,13 +27,14 @@ Create an arbitrarily sized curly bracket/brace, i.e. } as a line plot in matplo
 
 
 plot_chamfered_rectangle
-	  ____
-	 /    \
-	/      \
-	|      |
-	|      |
-	\      /
-	 \____/
+
+        ____
+       /    \
+      /      \
+      |      |
+      |      |
+      \      /
+       \____/
 
 	Arguments:
 
