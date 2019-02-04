@@ -125,6 +125,7 @@ def plot_chamfered_rectangle(center,widths,chamfer_size,chamfer_aspect_ratio=1.0
 		print("Chamfer too large for height")
 		return
 	x_path=[center[0]-widths[0]*0.5,
+	center[0]-widths[0]*0.5,
 	center[0]-widths[0]*0.5+chamfer_size,
 	center[0]+widths[0]*0.5-chamfer_size,
 	center[0]+widths[0]*0.5,
@@ -132,8 +133,10 @@ def plot_chamfered_rectangle(center,widths,chamfer_size,chamfer_aspect_ratio=1.0
 	center[0]+widths[0]*0.5-chamfer_size,
 	center[0]-widths[0]*0.5+chamfer_size,
 	center[0]-widths[0]*0.5,
+	center[0]-widths[0]*0.5,
 	center[0]-widths[0]*0.5]
-	y_path=[center[1]+widths[1]*0.5-chamfer_size*chamfer_aspect_ratio,
+	y_path=[center[1],
+	center[1]+widths[1]*0.5-chamfer_size*chamfer_aspect_ratio,
 	center[1]+widths[1]*0.5,
 	center[1]+widths[1]*0.5,
 	center[1]+widths[1]*0.5-chamfer_size*chamfer_aspect_ratio,
@@ -141,7 +144,8 @@ def plot_chamfered_rectangle(center,widths,chamfer_size,chamfer_aspect_ratio=1.0
 	center[1]-widths[1]*0.5,
 	center[1]-widths[1]*0.5,
 	center[1]-widths[1]*0.5+chamfer_size*chamfer_aspect_ratio,
-	center[1]+widths[1]*0.5-chamfer_size*chamfer_aspect_ratio]
+	center[1]+widths[1]*0.5-chamfer_size*chamfer_aspect_ratio,
+	center[1]]
 	plt.plot(x_path,y_path,linewidth=linewidth,color=color)
 	return
 
